@@ -1,0 +1,17 @@
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\bin\Debug\net5.0\ApplicationsDB.mdf
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\bin\Debug\net5.0\ApplicationsDB_log.ldf
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\bin\Debug\net5.0\Embassy.Data.deps.json
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\bin\Debug\net5.0\Embassy.Data.runtimeconfig.json
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\bin\Debug\net5.0\Embassy.Data.runtimeconfig.dev.json
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\bin\Debug\net5.0\Embassy.Data.dll
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\bin\Debug\net5.0\ref\Embassy.Data.dll
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\bin\Debug\net5.0\Embassy.Data.pdb
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\bin\Debug\net5.0\Embassy.Data.xml
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\obj\Debug\net5.0\Embassy.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\obj\Debug\net5.0\Embassy.Data.AssemblyInfoInputs.cache
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\obj\Debug\net5.0\Embassy.Data.AssemblyInfo.cs
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\obj\Debug\net5.0\Embassy.Data.csproj.CoreCompileInputs.cache
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\obj\Debug\net5.0\Embassy.Data.dll
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\obj\Debug\net5.0\ref\Embassy.Data.dll
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\obj\Debug\net5.0\Embassy.Data.pdb
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Data\obj\Debug\net5.0\Embassy.Data.genruntimeconfig.cache

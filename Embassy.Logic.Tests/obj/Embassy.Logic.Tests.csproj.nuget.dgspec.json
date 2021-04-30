@@ -1,0 +1,343 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic.Tests\\Embassy.Logic.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\Embassy.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\Embassy.Data.csproj",
+        "projectName": "Embassy.Data",
+        "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\Embassy.Data.csproj",
+        "packagesPath": "C:\\Users\\Pololo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pololo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic.Tests\\Embassy.Logic.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic.Tests\\Embassy.Logic.Tests.csproj",
+        "projectName": "Embassy.Logic.Tests",
+        "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic.Tests\\Embassy.Logic.Tests.csproj",
+        "packagesPath": "C:\\Users\\Pololo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pololo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\Embassy.Data.csproj": {
+                "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\Embassy.Data.csproj"
+              },
+              "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic\\Embassy.Logic.csproj": {
+                "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic\\Embassy.Logic.csproj"
+              },
+              "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Repository\\Embassy.Repository.csproj": {
+                "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Repository\\Embassy.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.15.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic\\Embassy.Logic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic\\Embassy.Logic.csproj",
+        "projectName": "Embassy.Logic",
+        "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic\\Embassy.Logic.csproj",
+        "packagesPath": "C:\\Users\\Pololo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Logic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pololo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\Embassy.Data.csproj": {
+                "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\Embassy.Data.csproj"
+              },
+              "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Repository\\Embassy.Repository.csproj": {
+                "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Repository\\Embassy.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Repository\\Embassy.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Repository\\Embassy.Repository.csproj",
+        "projectName": "Embassy.Repository",
+        "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Repository\\Embassy.Repository.csproj",
+        "packagesPath": "C:\\Users\\Pololo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Pololo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\Embassy.Data.csproj": {
+                "projectPath": "C:\\Users\\Pololo\\Desktop\\oenik_prog3_2020_2_hp5lp8\\OENIK_PROG3_2020_2_HP5LP8\\Embassy.Data\\Embassy.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.1, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

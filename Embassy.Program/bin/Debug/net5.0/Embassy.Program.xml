@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Embassy.Program</name>
+    </assembly>
+    <members>
+        <member name="T:Embassy.Program.Program">
+            <summary>
+            Program class showing the menu itself.
+            </summary>
+        </member>
+        <member name="M:Embassy.Program.Program.PaymentBusinessLogicMenu">
+            <summary>
+            The menu using object of PaymentLogic class,
+            switch to ability to choose the prefered item.
+            </summary>
+        </member>
+    </members>
+</doc>

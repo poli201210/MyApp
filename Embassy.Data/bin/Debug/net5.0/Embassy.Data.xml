@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Embassy.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Embassy.Program.Models.Agency">
+            <summary>
+            Agency class of Agency table
+            in embassy database.
+            </summary>
+        </member>
+        <member name="M:Embassy.Program.Models.Agency.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Program.Models.Agency"/> class.
+            Constructor of class.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Agency.AgenId">
+            <summary>
+            Gets or sets for Identical number of agency.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Agency.AgenName">
+            <summary>
+            Gets or sets text as an agency name.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Agency.AgenAddress">
+            <summary>
+            Gets or sets text as an agency address fiels.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Agency.AgenEmail">
+            <summary>
+            Gets or sets text as email address.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Agency.Payment">
+            <summary>
+            Gets or sets foreign key for the agency table.
+            </summary>
+        </member>
+        <member name="T:Embassy.Program.Models.Applicant">
+            <summary>
+            Class for Aolicant data from database.
+            </summary>
+        </member>
+        <member name="M:Embassy.Program.Models.Applicant.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Program.Models.Applicant"/> class.
+            Aplicant constructor of the class.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Applicant.ApplId">
+            <summary>
+            Gets or sets for identical number of applicant.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Applicant.ApplName">
+            <summary>
+            Gets or sets for text as a name.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Applicant.ApplGender">
+            <summary>
+            Gets or sets for text as gender.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Applicant.ApplEmail">
+            <summary>
+            Gets or sets for string as email address.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Applicant.ApplIncome">
+            <summary>
+            Gets or sets for integer number as salary for applicant.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Applicant.ApplBirth">
+            <summary>
+            Gets or sets for date as applicant birthdate.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Applicant.ApplJob">
+            <summary>
+            Gets or sets for string as job name.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Applicant.Payment">
+            <summary>
+            Gets or sets for foreign key payment.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Applicant.Visa">
+            <summary>
+            Gets or sets for foreign key as visa data.
+            </summary>
+        </member>
+        <member name="T:Embassy.Program.Models.EmbCtx">
+            <summary>
+            Database implementation class EmbCtx as
+            EmbassyContext.
+            </summary>
+        </member>
+        <member name="M:Embassy.Program.Models.EmbCtx.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Program.Models.EmbCtx"/> class.
+            Empty constructor of the class.
+            </summary>
+        </member>
+        <member name="M:Embassy.Program.Models.EmbCtx.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Embassy.Program.Models.EmbCtx})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Program.Models.EmbCtx"/> class.
+            Empty constructor with Db
+            ContextOptions method with entity.
+            </summary>
+            <param name="options">database.</param>
+        </member>
+        <member name="P:Embassy.Program.Models.EmbCtx.Agency">
+            <summary>
+            Gets or sets for agency database table.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.EmbCtx.Applicant">
+            <summary>
+            Gets or sets for applicant database table.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.EmbCtx.Payment">
+            <summary>
+            Gets or sets for payment database table.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.EmbCtx.Visa">
+            <summary>
+            Gets or sets for visa database table.
+            </summary>
+        </member>
+        <member name="M:Embassy.Program.Models.EmbCtx.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Override method for able to Use
+            lazyLoadingProxies() method.
+            </summary>
+            <param name="optionsBuilder">DBContextOptions.</param>
+        </member>
+        <member name="M:Embassy.Program.Models.EmbCtx.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Override method to create model and entity.
+            </summary>
+            <param name="modelBuilder">ModelBuilder class.</param>
+        </member>
+        <member name="T:Embassy.Program.Models.Payment">
+            <summary>
+            Class for payment table
+            to store variables.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Payment.PayId">
+            <summary>
+            Gets or sets for identity number for payment data.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Payment.PayApplId">
+            <summary>
+            Gets or sets for foreign key as applicant identical number.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Payment.PayAgenId">
+            <summary>
+            Gets or sets for foreign key as agency identical number.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Payment.PayAmount">
+            <summary>
+            Gets or sets for amount of payment.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Payment.PayIspayed">
+            <summary>
+            Gets or sets for payment ensure if done trunsuctions.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Payment.PayAgen">
+            <summary>
+            Gets or sets virtual for foreign key.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Payment.PayAppl">
+            <summary>
+            Gets or sets virtual for foreign key.
+            </summary>
+        </member>
+        <member name="T:Embassy.Program.Models.Visa">
+            <summary>
+            Visa table class in models.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Visa.VisaId">
+            <summary>
+            Gets or sets for identical number for Visa data.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Visa.VisaApplId">
+            <summary>
+            Gets or sets for identical number for applicant in visa table as foreign key.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Visa.VisaType">
+            <summary>
+            Gets or sets for string text as type of visa.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Visa.VisaDuration">
+            <summary>
+            Gets or sets for number of days as amout of days legally applicant can stay abroad.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Visa.VisaEnddate">
+            <summary>
+            Gets or sets for date time, when visa will expire.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Visa.VisaIsapproved">
+            <summary>
+            Gets or sets for text if with was given to the applicant.
+            </summary>
+        </member>
+        <member name="P:Embassy.Program.Models.Visa.VisaAppl">
+            <summary>
+            Gets or sets virtual for applicant in visa table as foreign key.
+            </summary>
+        </member>
+    </members>
+</doc>

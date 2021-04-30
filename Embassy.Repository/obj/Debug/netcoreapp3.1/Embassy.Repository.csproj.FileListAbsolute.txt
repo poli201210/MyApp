@@ -1,0 +1,17 @@
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\obj\Debug\netcoreapp3.1\Embassy.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\obj\Debug\netcoreapp3.1\Embassy.Repository.AssemblyInfoInputs.cache
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\obj\Debug\netcoreapp3.1\Embassy.Repository.AssemblyInfo.cs
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\obj\Debug\netcoreapp3.1\Embassy.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\bin\Debug\netcoreapp3.1\ApplicationsDB.mdf
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\bin\Debug\netcoreapp3.1\ApplicationsDB_log.ldf
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\bin\Debug\netcoreapp3.1\Embassy.Repository.deps.json
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\bin\Debug\netcoreapp3.1\Embassy.Repository.dll
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\bin\Debug\netcoreapp3.1\Embassy.Repository.pdb
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\bin\Debug\netcoreapp3.1\Embassy.Repository.xml
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\bin\Debug\netcoreapp3.1\Embassy.Data.dll
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\bin\Debug\netcoreapp3.1\Embassy.Data.pdb
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\bin\Debug\netcoreapp3.1\Embassy.Data.xml
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\obj\Debug\netcoreapp3.1\Embassy.Repository.csprojAssemblyReference.cache
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\obj\Debug\netcoreapp3.1\Embassy.Repository.csproj.CopyComplete
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\obj\Debug\netcoreapp3.1\Embassy.Repository.dll
+C:\Users\Pololo\Desktop\oenik_prog3_2020_2_hp5lp8\OENIK_PROG3_2020_2_HP5LP8\Embassy.Repository\obj\Debug\netcoreapp3.1\Embassy.Repository.pdb

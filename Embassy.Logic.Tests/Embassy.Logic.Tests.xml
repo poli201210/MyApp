@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Embassy.Logic.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:Embassy.Logic.Tests.LogicTestPayment">
+            <summary>
+            Class of test for Non-CRUD
+            method for payment business logic.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestPayment.TestPaymentCommission">
+            <summary>
+            Non crud test for payment.
+            </summary>
+        </member>
+        <member name="T:Embassy.Logic.Tests.LogicTestsAgency">
+            <summary>
+            Test Agencies class. To test functions like:
+            get all, get one, create, delete and non-crud method
+            get one agency by entering the name.
+            </summary>
+        </member>
+        <member name="F:Embassy.Logic.Tests.LogicTestsAgency.agenList">
+            <summary>
+            Get instance to each of logic,repository and list
+            for Mock.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsAgency.SetUPAgency">
+            <summary>
+            Setup for entity imagine or true data with list
+            setup what should be returned and set up mock with interface.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsAgency.GetAllFunctionsShouldReturnForObject">
+            <summary>
+            Test for return all agencys.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsAgency.GetOneReturnObject(System.Int32)">
+            <summary>
+            Test of get one agency.
+            </summary>
+            <param name="id">int identical parameter. </param>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsAgency.TestDeleteOldAgency(System.Int32)">
+            <summary>
+            CRUD test to delete one of the agency,
+            with parameter id, which will be removed with one (-1).
+            </summary>
+            <param name="id"> int param.</param>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsAgency.TestGetAgencyByName">
+            <summary>
+            test get by name.
+            </summary>
+        </member>
+        <member name="T:Embassy.Logic.Tests.LogicTestsApplicant">
+            <summary>
+            Tests crud and non-crud methods
+            from applicant data.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsApplicant.TestGetOneApplicant">
+            <summary>
+            testing possibilities of get one, from listing
+            few of applicants data.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsApplicant.TestDeleteOneApplicant">
+            <summary>
+            Test of CRUD methods: remove one
+            of the applicants.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsApplicant.TestApplicantSalaryWithTaxes">
+            <summary>
+            Non crud test for applicant.
+            </summary>
+        </member>
+        <member name="T:Embassy.Logic.Tests.LogicTestsVisa">
+            <summary>
+            Tests for visa table contains: Setup, two tests and
+            four test cases.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsVisa.Setup">
+            <summary>
+            Initializing the Setup for tests visa.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsVisa.TestAddFunction">
+            <summary>
+            Tests Add new visa method.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsVisa.TestDeleteFunction(System.Int32)">
+            <summary>
+            Tests delete method for visa object.
+            </summary>
+            <param name="id">int.</param>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsVisa.GetAllFunctionsShouldReturnFour">
+            <summary>
+            Tests for GetAll method for vis object.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.Tests.LogicTestsVisa.TestVisaDaysBeforeLegalExtensions">
+            <summary>
+            Non crud test for visa.
+            </summary>
+        </member>
+    </members>
+</doc>

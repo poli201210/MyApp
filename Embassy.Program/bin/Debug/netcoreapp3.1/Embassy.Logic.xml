@@ -1,0 +1,712 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Embassy.Logic</name>
+    </assembly>
+    <members>
+        <member name="T:Embassy.Logic.AgencyLogic">
+            <summary>
+            Class for methods manage Agency data with interface
+            and repository (change email, get one, get all,
+            get by name,create and delete methods).
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.#ctor(Embassy.Repository.IAgencyRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.AgencyLogic"/> class.
+            Constructor with interface agency
+            repository.
+            </summary>
+            <param name="repo">interface param.</param>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.ChangeAgencyEmail(System.Int32,System.String)">
+            <summary>
+            Non-CRUD method to have possibility change information as
+            email (string text), using from repository interface method.
+            </summary>
+            <param name="ag_Id">identical integer.</param>
+            <param name="ag_email">string text.</param>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.GetAllAgencies">
+            <summary>
+            Method that allow listing all data from the entity (table database)
+            that we need.
+            </summary>
+            <returns>list of entities.</returns>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.GetOneAgency(System.Int32)">
+            <summary>
+            Get one data, by specifying the identical number.
+            </summary>
+            <param name="id">identical.</param>
+            <returns>data.</returns>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.DeleteAgency(System.Int32)">
+            <summary>
+            CRUD method that remove one data of the table.
+            </summary>
+            <param name="id">identical number integer.</param>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.AddAgency(Embassy.Program.Models.Agency)">
+            <summary>
+            CRUD method, creating new item (row) of the
+            table, with all variables like id, name, email...
+            </summary>
+            <param name="ag">database table.</param>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.CreateNewAgency(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Creating new variable of the table,
+            throw repository create method.
+            </summary>
+            <param name="id">identical integer.</param>
+            <param name="name">string text.</param>
+            <param name="location">text.</param>
+            <param name="mail">string.</param>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.GetAgencyByName(System.String)">
+            <summary>
+             Purpose is to search and find agency and its number of applicants
+            by entering the Agency's name.
+            </summary>
+            <param name="name">string. </param>
+            <returns> agency. </returns>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.AgencyLogic"/> class.
+            Constructor agency.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.#ctor(Embassy.Repository.IAgencyRepository,Embassy.Repository.IApplicantRepository,Embassy.Repository.IPaymentRepository,Embassy.Repository.IVisaRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.AgencyLogic"/> class.
+            Constructor for agencylogic object.
+            </summary>
+            <param name="agrepo">Agency repository.</param>
+            <param name="aprepo">Applicant repository.</param>
+            <param name="payrepo">Payment repository.</param>
+            <param name="visarepo">Visa repository.</param>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.GetAgencyWithApprovedVisas">
+            <summary>
+            Non-crud method for Agencies.
+            </summary>
+            <returns>IList of non-rud object as AgencySuccessful.</returns>
+        </member>
+        <member name="M:Embassy.Logic.AgencyLogic.GetAgencyWithApprovedVisasAsync">
+            <summary>
+            Task method for Agency data as AgencySuccessful.
+            </summary>
+            <returns>Task IList.</returns>
+        </member>
+        <member name="T:Embassy.Logic.AgencyNameAndClient">
+            <summary>
+            Object for non-rud method GetAgencyByName.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.AgencyNameAndClient.AgenName">
+            <summary>
+            Gets or sets agen name.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.AgencyNameAndClient.Number">
+            <summary>
+            Gets or sets id.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.AgencyNameAndClient.Equals(System.Object)">
+            <summary>
+            Override method equals.
+            </summary>
+            <param name="obj">object.</param>
+            <returns>bool.</returns>
+        </member>
+        <member name="M:Embassy.Logic.AgencyNameAndClient.GetHashCode">
+            <summary>
+            override hash code method.
+            </summary>
+            <returns>int.</returns>
+        </member>
+        <member name="T:Embassy.Logic.AgencySuccessful">
+            <summary>
+            Agency Non-crud object.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.AgencySuccessful.AgenName">
+            <summary>
+            Gets or sets agen name.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.AgencySuccessful.AgenId">
+            <summary>
+            Gets or sets id.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.AgencySuccessful.Approved">
+            <summary>
+            Gets or sets approved.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.AgencySuccessful.Job">
+            <summary>
+            Gets or sets job.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.AgencySuccessful.ClientName">
+            <summary>
+            Gets or sets client name.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.AgencySuccessful.Equals(System.Object)">
+            <summary>
+            Override method equals.
+            </summary>
+            <param name="obj">object.</param>
+            <returns>bool.</returns>
+        </member>
+        <member name="M:Embassy.Logic.AgencySuccessful.GetHashCode">
+            <summary>
+            override hash code method.
+            </summary>
+            <returns>int.</returns>
+        </member>
+        <member name="T:Embassy.Logic.ApplicantLogic">
+            <summary>
+            Class with CRUD and Non-CRUD methods for table Applicant
+            like: change address,get salary taxes, create new applicant
+            and delete.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.#ctor(Embassy.Repository.IApplicantRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.ApplicantLogic"/> class.
+            Constructor of the class.
+            </summary>
+            <param name="repo">Interface repository.</param>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.ChangeApplicantAddress(System.Int32,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.GetAllApplicants">
+            <inheritdoc/>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.ApplicantLogic"/> class.
+            ApplicantLog constructor.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.#ctor(Embassy.Repository.IApplicantRepository,Embassy.Repository.IPaymentRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.ApplicantLogic"/> class.
+            Applicant logic constructor.
+            </summary>
+            <param name="aplRepo">repository interface.</param>
+            <param name="payRepo">payment repos interface.</param>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.GetApplicantsSalaryWithTax">
+            <inheritdoc/>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.GetOneApplicant(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.CreateNewApplicant(System.Int32,System.String,System.String,System.String,System.Int32,System.DateTime,System.String)">
+            <summary>
+            Creating new variable of the table,
+            throw repository create method.
+            </summary>
+            <param name="id">identical integer.</param>
+            <param name="name">string text.</param>
+            <param name="gender">text.</param>
+            <param name="mail">string.</param>
+            <param name="income">integer.</param>
+            <param name="birth">date.</param>
+            <param name="job">string parameter.</param>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.RemoveApplicant(System.Int32)">
+            <summary>
+            CRUD remove method, allow to delete
+            one variable of the table, by entering only id.
+            </summary>
+            <param name="id">identical int.</param>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantLogic.GetApplicantSalaryWithTaxAsync">
+            <summary>
+            Task method for Applicant data.
+            </summary>
+            <returns>Task IList.</returns>
+        </member>
+        <member name="T:Embassy.Logic.ApplicantSalaryWithTax">
+            <summary>
+            Non-crud method class
+            to execute salary already with taxes (Net Salary)
+            included.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.ApplicantSalaryWithTax.ApplicantName">
+            <summary>
+            Gets or sets text name property.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.ApplicantSalaryWithTax.SalaryWithTax">
+            <summary>
+            Gets or sets double salary.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.ApplicantSalaryWithTax.Pay">
+            <summary>
+            Gets or sets payment.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.ApplicantSalaryWithTax.Tax">
+            <summary>
+            Gets or sets tax.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantSalaryWithTax.Equals(System.Object)">
+            <summary>
+            Overrided method equals.
+            </summary>
+            <param name="obj">object parameter.</param>
+            <returns>true or false.</returns>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantSalaryWithTax.GetHashCode">
+            <summary>
+            override method to have hash code.
+            </summary>
+            <returns>integer.</returns>
+        </member>
+        <member name="M:Embassy.Logic.ApplicantSalaryWithTax.ToString">
+            <summary>
+            Method ToString printing the values and variables in the
+            way that we would set.
+            </summary>
+            <returns>text.</returns>
+        </member>
+        <member name="T:Embassy.Logic.IAgencyLogic">
+            <summary>
+            interface for Agency Logic
+            class.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.IAgencyLogic.GetOneAgency(System.Int32)">
+            <summary>
+            Interface method.
+            </summary>
+            <param name="id">integer.</param>
+            <returns>Agency data.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IAgencyLogic.ChangeAgencyEmail(System.Int32,System.String)">
+            <summary>
+            Non-CRUD interface method to change
+            string email.
+            </summary>
+            <param name="ag_Id">integer identifical number.</param>
+            <param name="ag_email">string text.</param>
+        </member>
+        <member name="M:Embassy.Logic.IAgencyLogic.GetAllAgencies">
+            <summary>
+            List of all entity from data.
+            </summary>
+            <returns>list of agencies data.</returns>
+        </member>
+        <member name="T:Embassy.Logic.IApplicantLogic">
+            <summary>
+            inerface for applicant logic
+            class.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.IApplicantLogic.GetOneApplicant(System.Int32)">
+            <summary>
+            Method for take one variable from
+            Applicant table datadase by id
+            instance.
+            </summary>
+            <param name="id">integer.</param>
+            <returns>applicant data.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IApplicantLogic.ChangeApplicantAddress(System.Int32,System.String)">
+            <summary>
+            Non-crud method.
+            </summary>
+            <param name="applicantId">integer.</param>
+            <param name="address">text.</param>
+        </member>
+        <member name="M:Embassy.Logic.IApplicantLogic.GetAllApplicants">
+            <summary>
+            Method to have all variables of applicant
+            table in a list.
+            </summary>
+            <returns>list.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IApplicantLogic.GetApplicantsSalaryWithTax">
+            <summary>
+            Non-CRUD method,
+            to have salary with taxes in a list.
+            </summary>
+            <returns>list.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IApplicantLogic.GetApplicantSalaryWithTaxAsync">
+            <summary>
+            Task method for Applicant data and non-crud method.
+            </summary>
+            <returns>Task IList.</returns>
+        </member>
+        <member name="T:Embassy.Logic.IPaymentLogic">
+            <summary>
+            interface for
+            payment table logics methods.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.IPaymentLogic.GetPaymentCommissions">
+            <summary>
+            Non crud method to calculate commissions for agency,
+            but in payment data table.
+            </summary>
+            <returns>List.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IPaymentLogic.GetOnePayment(System.Int32)">
+            <summary>
+            method to have one variable of the
+            payment table.
+            </summary>
+            <param name="id">integer.</param>
+            <returns>variable payment.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IPaymentLogic.ChangePriceAmount(System.Int32,System.Int32)">
+            <summary>
+            Non-Crud method to change
+            the amount of payment.
+            </summary>
+            <param name="newid">integer.</param>
+            <param name="newAmount">integer of amount.</param>
+        </member>
+        <member name="M:Embassy.Logic.IPaymentLogic.GetAllPayments">
+            <summary>
+            Get all of variables payment
+            table in a list.
+            </summary>
+            <returns>list of payments.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IPaymentLogic.GetPaymentCommissionAsync">
+            <summary>
+            Task for Non-CRUD PaymentCommission method.
+            </summary>
+            <returns>Task IList.</returns>
+        </member>
+        <member name="T:Embassy.Logic.IVisaLogic">
+            <summary>
+            Interface, which storing methods for
+            Visa logic class.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.IVisaLogic.GetOneVisa(System.Int32)">
+            <summary>
+            Get one variable method.
+            </summary>
+            <param name="id">identical.</param>
+            <returns>Visa data.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IVisaLogic.ChangeDays(System.Int32,System.Int32)">
+            <summary>
+            CRUD- update method, updating days.
+            </summary>
+            <param name="id">identical.</param>
+            <param name="days">number of days abroad.</param>
+        </member>
+        <member name="M:Embassy.Logic.IVisaLogic.GetAllVisas">
+            <summary>
+            Get all list of visa data.
+            </summary>
+            <returns>list of visas.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IVisaLogic.GetVisaActualDays">
+            <summary>
+            Interface method for list visas, which
+            we will require.
+            </summary>
+            <returns>IList.</returns>
+        </member>
+        <member name="M:Embassy.Logic.IVisaLogic.GetVisaActualDaysAsync">
+            <summary>
+            Task method.
+            </summary>
+            <returns>IList.</returns>
+        </member>
+        <member name="T:Embassy.Logic.PaymentCommission">
+            <summary>
+            Class for Non-CRUD method for payment table
+            storing the commission that agency will get from the
+            applicant, as client using agency serveses.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.PaymentCommission.AmountOfCommission">
+            <summary>
+            Gets or sets amount of money that agency will earn
+            from applicant(client).
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.PaymentCommission.IsPaid">
+            <summary>
+            Gets or sets property to agency.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.PaymentCommission.PayId">
+            <summary>
+            Gets or sets property to PayId.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.PaymentCommission.Com">
+            <summary>
+            Gets or sets property for comm.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.PaymentCommission.Equals(System.Object)">
+            <summary>
+            Overrided method equals.
+            </summary>
+            <param name="obj">object.</param>
+            <returns>true or false.</returns>
+        </member>
+        <member name="M:Embassy.Logic.PaymentCommission.GetHashCode">
+            <summary>
+            override method to have hash code.
+            </summary>
+            <returns>integer.</returns>
+        </member>
+        <member name="M:Embassy.Logic.PaymentCommission.ToString">
+            <summary>
+            Method ToString printing the values and variables in the
+            way that we would set.
+            </summary>
+            <returns>text.</returns>
+        </member>
+        <member name="T:Embassy.Logic.PaymentLogic">
+            <summary>
+            Class of the crud (Create,Remove) and non-crud (Change price
+            of the payment). With help of repository interface.
+            </summary>
+        </member>
+        <member name="F:Embassy.Logic.PaymentLogic.payment_repo">
+            <summary>
+            Interface repository field
+            for payment.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.#ctor(Embassy.Repository.IPaymentRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.PaymentLogic"/> class.
+            Constructor for class, where if repository
+            item is null, it takes data from dtabase.
+            </summary>
+            <param name="repo">interface repository for payment.</param>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.PaymentLogic"/> class.
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.#ctor(Embassy.Repository.IApplicantRepository,Embassy.Repository.IAgencyRepository,Embassy.Repository.IPaymentRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.PaymentLogic"/> class.
+            Constructor.
+            </summary>
+            <param name="aplRepo">repository.</param>
+            <param name="agencyRepository">agency repository.</param>
+            <param name="paymentRepository">payment.</param>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.ChangePriceAmount(System.Int32,System.Int32)">
+            <summary>
+            Method through repoository to change
+            the amount.
+            </summary>
+            <param name="newid">integer.</param>
+            <param name="newAmount">integer instance.</param>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.GetAllPayments">
+            <summary>
+            Method that Listing all variables of
+            payment table.
+            </summary>
+            <returns>list of payments.</returns>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.GetOnePayment(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.CreateNewPayment(System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            CRUD method, creating new variable in payment
+            table, through repository. With filling the data
+            in parameters as written bellow.
+            </summary>
+            <param name="pay_id">integer.</param>
+            <param name="applicant_id">foreign key int.</param>
+            <param name="Agency_id">another foreign key.</param>
+            <param name="Amount">integer amount.</param>
+            <param name="Payed">string, but could be as bool.</param>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.RemoveOldPayment(System.Int32)">
+            <summary>
+            CRUD method delete, which allow to
+            remove one data, by entering id.
+            </summary>
+            <param name="id">integer identical number.</param>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.GetPaymentCommissions">
+            <summary>
+            Method calculations to print
+            commissions.
+            </summary>
+            <returns>List.</returns>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.GetPaymentCommissionAsync">
+            <summary>
+            Task for method GetPaymentCommission, implemented by interface.
+            </summary>
+            <returns>Task IList.</returns>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.GetPaymentAverageCommissions">
+            <summary>
+            Query for average commissions per payment.
+            </summary>
+            <returns>Ilist of payments.</returns>
+        </member>
+        <member name="M:Embassy.Logic.PaymentLogic.GetPaymentAverageCommissionsAsync">
+            <summary>
+            Task for method GetPaymentAverageCommission.
+            </summary>
+            <returns>Task IList.</returns>
+        </member>
+        <member name="T:Embassy.Logic.VisaDaysBeforeLegalExtension">
+            <summary>
+            Class of non-CRUD method for Visa data. Its able to store the days, which applicant
+            has for to stay legal in the surtain country before applying extension for visa.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.VisaDaysBeforeLegalExtension.VisaId">
+            <summary>
+            Gets or sets visa identical number.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.VisaDaysBeforeLegalExtension.Visadays">
+            <summary>
+            Gets or sets number of days.
+            </summary>
+        </member>
+        <member name="P:Embassy.Logic.VisaDaysBeforeLegalExtension.ApplEmail">
+            <summary>
+            Gets or sets applicants email.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.VisaDaysBeforeLegalExtension.Equals(System.Object)">
+            <summary>
+            Ovveride method.
+            </summary>
+            <param name="obj">Object.</param>
+            <returns>True  or false.</returns>
+        </member>
+        <member name="M:Embassy.Logic.VisaDaysBeforeLegalExtension.GetHashCode">
+            <summary>
+            Get hashCode.
+            </summary>
+            <returns>integer.</returns>
+        </member>
+        <member name="M:Embassy.Logic.VisaDaysBeforeLegalExtension.ToString">
+            <summary>
+            ToString printing variables, in console in way
+            how you wish.
+            </summary>
+            <returns>String.</returns>
+        </member>
+        <member name="T:Embassy.Logic.VisaLogic">
+            <summary>
+            Class for store CRUD methods for visa logic
+            update (change days), create, remove.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.#ctor(Embassy.Repository.IVisaRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.VisaLogic"/> class.
+            Constructor.
+            </summary>
+            <param name="repo">interface visa repository.</param>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.ChangeDays(System.Int32,System.Int32)">
+            <summary>
+            update method implementing in logic
+            class.
+            </summary>
+            <param name="id">identical.</param>
+            <param name="days">number of days abroad.</param>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.GetAllVisas">
+            <summary>
+            method to store all visa data.
+            </summary>
+            <returns>list of visa.</returns>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.GetOneVisa(System.Int32)">
+            <summary>
+            method to take one variable, by
+            entering only id number.
+            </summary>
+            <param name="id">identical.</param>
+            <returns>visa data.</returns>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.CreateNewVisa(System.Int32,System.Int32,System.String,System.Int32,System.DateTime,System.String)">
+            <summary>
+            Create method from CRUD.
+            Creating new visa variable with all
+            parameters, which we need.
+            </summary>
+            <param name="id">identical.</param>
+            <param name="applicantId">identical for applicant (Foreign key).</param>
+            <param name="typeOfVisa">text as type of visa (X2), depends on country.</param>
+            <param name="period">number of days, given for applicant for to locate abroad.</param>
+            <param name="lastDate">Exact date till when applicant ligal to stay abroad.</param>
+            <param name="approve">text as was specific applicant approved for to have a visa.</param>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.RemoveOldVisa(System.Int32)">
+            <summary>
+            CRUD -remove/delete method,
+            to remove old or unnecessary data of visa.
+            </summary>
+            <param name="id">identical.</param>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.AddVisa(Embassy.Program.Models.Visa)">
+            <summary>
+            Method foe the tests in test class.
+            </summary>
+            <param name="visa">Visa data.</param>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.VisaLogic"/> class.
+            </summary>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.#ctor(Embassy.Repository.IApplicantRepository,Embassy.Repository.IVisaRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Logic.VisaLogic"/> class.
+            Visa constructor.
+            </summary>
+            <param name="aplRepo">interface repo.</param>
+            <param name="visaRepo">interface repo for visa.</param>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.GetVisaActualDays">
+            <summary>
+            Method for Embassy be sure how much applicant can spend days in another country (ex. Germany)
+            before applying in case of exstension visa again.
+            </summary>
+            <returns>list of visa.</returns>
+        </member>
+        <member name="M:Embassy.Logic.VisaLogic.GetVisaActualDaysAsync">
+            <summary>
+            Task method for Non-CRUD method
+            GetVisaActualDays.
+            </summary>
+            <returns>Task IList.</returns>
+        </member>
+    </members>
+</doc>

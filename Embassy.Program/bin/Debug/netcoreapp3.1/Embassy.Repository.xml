@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Embassy.Repository</name>
+    </assembly>
+    <members>
+        <member name="T:Embassy.Repository.AgencyRepository">
+            <summary>
+            Repository for agency data table
+            with constructor and update method.
+            </summary>
+        </member>
+        <member name="M:Embassy.Repository.AgencyRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Repository.AgencyRepository"/> class.
+            constructor with database
+            context.
+            </summary>
+            <param name="context">database parameter.</param>
+        </member>
+        <member name="M:Embassy.Repository.AgencyRepository.ChangeEmail(System.Int32,System.String)">
+            <summary>
+            Update method with exception
+            handling.
+            </summary>
+            <param name="id">integer.</param>
+            <param name="newemail">string.</param>
+        </member>
+        <member name="M:Embassy.Repository.AgencyRepository.GetOne(System.Int32)">
+            <summary>
+            Method from repository
+            allows take one variable of data with
+            specifying id.
+            </summary>
+            <param name="id">integer.</param>
+            <returns>Agency data.</returns>
+        </member>
+        <member name="T:Embassy.Repository.ApplicantRepository">
+            <summary>
+            Repository for the Applicant data.
+            </summary>
+        </member>
+        <member name="M:Embassy.Repository.ApplicantRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Repository.ApplicantRepository"/> class.
+            Empty constructor for applicant repository.
+            </summary>
+            <param name="context">DbContext.</param>
+        </member>
+        <member name="M:Embassy.Repository.ApplicantRepository.ChangeAddress(System.Int32,System.String)">
+            <summary>
+            Method CRUD as Update to change contact as email address.
+            </summary>
+            <param name="id">integer.</param>
+            <param name="newaddress">text.</param>
+        </member>
+        <member name="M:Embassy.Repository.ApplicantRepository.GetOne(System.Int32)">
+            <summary>
+            Get one method to gat one by entering id.
+            </summary>
+            <param name="id">integer.</param>
+            <returns>Applicant data.</returns>
+        </member>
+        <member name="M:Embassy.Repository.ApplicantRepository.AddApplicant(Embassy.Program.Models.Applicant)">
+            <summary>
+            Add applicant to existing data.
+            </summary>
+            <param name="app">Applicant.</param>
+        </member>
+        <member name="M:Embassy.Repository.ApplicantRepository.RemoveApplicant(Embassy.Program.Models.Applicant)">
+            <summary>
+            Delete one applicant from data table.
+            </summary>
+            <param name="app">Applicant.</param>
+        </member>
+        <member name="T:Embassy.Repository.IApplicantRepository">
+            <summary>
+            Interface Aplicant repository
+            consist a modify method.
+            </summary>
+        </member>
+        <member name="M:Embassy.Repository.IApplicantRepository.ChangeAddress(System.Int32,System.String)">
+            <summary>
+            Update method from CRUD.
+            </summary>
+            <param name="id">integer.</param>
+            <param name="newaddress">text.</param>
+        </member>
+        <member name="T:Embassy.Repository.IAgencyRepository">
+            <summary>
+            Interface repository for agency data
+            with one invented CRUD method.
+            </summary>
+        </member>
+        <member name="M:Embassy.Repository.IAgencyRepository.ChangeEmail(System.Int32,System.String)">
+            <summary>
+            CRUD-update method as
+            example method for to change the text of email variable,
+            by entering id.
+            </summary>
+            <param name="id">identifical integer.</param>
+            <param name="newemail">text instance.</param>
+        </member>
+        <member name="T:Embassy.Repository.IPaymentRepository">
+            <summary>
+            Repository interface for payment table
+            from database.
+            </summary>
+        </member>
+        <member name="M:Embassy.Repository.IPaymentRepository.ChangePriceAmount(System.Int32,System.Int32)">
+            <summary>
+            CRUD method update initializer.
+            </summary>
+            <param name="newid">integer.</param>
+            <param name="newAmount">integer for price.</param>
+        </member>
+        <member name="T:Embassy.Repository.IRepository`1">
+            <summary>
+            interface repositoty
+            main.
+            </summary>
+            <typeparam name="T">entity.</typeparam>
+        </member>
+        <member name="M:Embassy.Repository.IRepository`1.GetOne(System.Int32)">
+            <summary>
+            initializer to take one
+            of entity item.
+            </summary>
+            <param name="id">integer.</param>
+            <returns>entity.</returns>
+        </member>
+        <member name="M:Embassy.Repository.IRepository`1.GetAll">
+            <summary>
+             Making method to take
+            all variables in a list.
+            </summary>
+            <returns>list of entities.</returns>
+        </member>
+        <member name="M:Embassy.Repository.IRepository`1.Create(`0)">
+            <summary>
+            Initializing Create method from CRUD.
+            </summary>
+            <param name="newInstance">entity.</param>
+        </member>
+        <member name="M:Embassy.Repository.IRepository`1.Remove(`0)">
+            <summary>
+            Initializing Remove method from CRUD.
+            </summary>
+            <param name="uselessInstance">entity.</param>
+        </member>
+        <member name="T:Embassy.Repository.IVisaRepository">
+            <summary>
+            interface for visa table.
+            </summary>
+        </member>
+        <member name="M:Embassy.Repository.IVisaRepository.ChangeDays(System.Int32,System.Int32)">
+            <summary>
+            CRUD method update, to change
+            number of days, allowed to stay in
+            another country.
+            </summary>
+            <param name="id">integer identifical.</param>
+            <param name="days">number of days.</param>
+        </member>
+        <member name="T:Embassy.Repository.PaymentRepository">
+            <summary>
+            Class repository for one of the entity as
+            payment with method change the price as update
+            method from CRUD.
+            </summary>
+        </member>
+        <member name="M:Embassy.Repository.PaymentRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Repository.PaymentRepository"/> class.
+            Constructor for repository payment class.
+            </summary>
+            <param name="context">database context.</param>
+        </member>
+        <member name="M:Embassy.Repository.PaymentRepository.ChangePriceAmount(System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Embassy.Repository.PaymentRepository.GetOne(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Embassy.Repository.RepositoryGener`1">
+            <summary>
+            Main repository class with entity.
+            </summary>
+            <typeparam name="T">entity of T.</typeparam>
+        </member>
+        <member name="F:Embassy.Repository.RepositoryGener`1.context">
+            <summary>
+            context database.
+            </summary>
+        </member>
+        <member name="M:Embassy.Repository.RepositoryGener`1.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Repository.RepositoryGener`1"/> class.
+            </summary>
+            <param name="context">Constructor parameter from database.</param>
+        </member>
+        <member name="M:Embassy.Repository.RepositoryGener`1.Create(`0)">
+            <summary>
+            Create method, adding instance to the entity
+            and saving creation to database.
+            </summary>
+            <param name="newInstance">new instance of entity. </param>
+        </member>
+        <member name="M:Embassy.Repository.RepositoryGener`1.GetAll">
+            <summary>
+            Method that allowing take all list
+            from the entity.
+            </summary>
+            <returns>set entity.</returns>
+        </member>
+        <member name="M:Embassy.Repository.RepositoryGener`1.GetHashCode">
+            <summary>
+            Hashcode method, overrided.
+            </summary>
+            <returns>hashcode context.</returns>
+        </member>
+        <member name="M:Embassy.Repository.RepositoryGener`1.GetOne(System.Int32)">
+            <summary>
+            abstract entity, which
+            allowing get one entity.
+            </summary>
+            <param name="id">integer parameter identical.</param>
+            <returns>entity.</returns>
+        </member>
+        <member name="M:Embassy.Repository.RepositoryGener`1.Remove(`0)">
+            <summary>
+            Deleting method, one of the CRUD
+            methods.
+            </summary>
+            <param name="uselessInstance"> entity parameter.</param>
+        </member>
+        <member name="T:Embassy.Repository.VisaRepository">
+            <summary>
+            Object repository for visa table.
+            </summary>
+        </member>
+        <member name="M:Embassy.Repository.VisaRepository.#ctor(Microsoft.EntityFrameworkCore.DbContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Embassy.Repository.VisaRepository"/> class.
+            Constructor.
+            </summary>
+            <param name="context">database.</param>
+        </member>
+        <member name="M:Embassy.Repository.VisaRepository.ChangeDays(System.Int32,System.Int32)">
+            <summary>
+            CRUD update method to
+            change number of days abroad.
+            </summary>
+            <param name="id">identical.</param>
+            <param name="days">number of days.</param>
+        </member>
+        <member name="M:Embassy.Repository.VisaRepository.GetOne(System.Int32)">
+            <summary>
+            Method allowing take one variable from
+            the table of visa by entering id number.
+            </summary>
+            <param name="id">identical.</param>
+            <returns>visa data.</returns>
+        </member>
+    </members>
+</doc>
